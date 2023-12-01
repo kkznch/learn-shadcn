@@ -1,5 +1,7 @@
 import { FC } from 'react';
-import { useRecipes } from './hooks/useRecipes';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -8,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { useRecipes } from '@/hooks/useRecipes';
 
 const App: FC = () => {
   const { recipes } = useRecipes();
@@ -18,6 +21,10 @@ const App: FC = () => {
         {recipes.map((item) => (
           <Card key={item.id} className="flex flex-col justify-between">
             <CardHeader className="flex-row gap-4 items-center">
+              <Avatar>
+                <AvatarImage src={`${item.image}?random=${item.id}"`} alt="recipe img" />
+                <AvatarFallback>{item.title.slice(0, 2)}</AvatarFallback>
+              </Avatar>
               <div>
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription>{item.time} mins to cook.</CardDescription>
@@ -27,8 +34,8 @@ const App: FC = () => {
               <p>{item.description}</p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <button>View Recipe</button>
-              {item.vegan && <p>Vegan!</p>}
+              <Button>View Recipe</Button>
+              {item.vegan && <Badge variant="secondary">Vegan!</Badge>}
             </CardFooter>
           </Card>
         ))}
