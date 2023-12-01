@@ -14,7 +14,8 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "test": "echo \"No test\""
+    "test": "echo \"No test\"",
+    "json-server": "json-server --watch ./_data/db.json --port 4000"
   },
   "devDependencies": {
     "@types/node": "^20.6.2",

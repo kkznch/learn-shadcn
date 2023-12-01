@@ -17,7 +17,12 @@
     ```
 
 ## Usage
-Run yarn start command.
+Run yarn json-server command.
 ```sh
-$ yarn start
+$ yarn json-server
+```
+
+In another terminal, run yarn dev command.
+```sh
+$ yarn dev
 ```
