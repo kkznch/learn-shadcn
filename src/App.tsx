@@ -1,7 +1,14 @@
-import type { FC } from 'react';
+import { FC } from 'react';
+import { useRecipes } from './hooks/useRecipes';
 
 const App: FC = () => {
-  return <h1>Hello, world!</h1>;
+  const { recipes } = useRecipes();
+  return (
+    <>
+      <h1>shadcn使うよ</h1>
+      <div>{recipes.map((item) => item.title)}</div>
+    </>
+  );
 };
 
 export default App;

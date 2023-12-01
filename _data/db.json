@@ -1,0 +1,76 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Delicious Dish",
+      "image": "https://picsum.photos/200/300",
+      "time": 12,
+      "description": "A mouth-watering dish with exquisite flavors.",
+      "vegan": false
+    },
+    {
+      "id": 2,
+      "title": "Healthy Salad",
+      "image": "https://picsum.photos/200/300",
+      "time": 8,
+      "description": "A nutritious salad filled with fresh vegetables.",
+      "vegan": true
+    },
+    {
+      "id": 3,
+      "title": "Gourmet Pizza",
+      "image": "https://picsum.photos/200/300",
+      "time": 15,
+      "description": "A delightful pizza topped with premium ingredients.",
+      "vegan": false
+    },
+    {
+      "id": 4,
+      "title": "Fruit Smoothie",
+      "image": "https://picsum.photos/200/300",
+      "time": 5,
+      "description": "A refreshing fruit smoothie to start your day.",
+      "vegan": true
+    },
+    {
+      "id": 5,
+      "title": "Spicy Tacos",
+      "image": "https://picsum.photos/200/300",
+      "time": 10,
+      "description": "Flavorful tacos with a kick of spice.",
+      "vegan": false
+    },
+    {
+      "id": 6,
+      "title": "Vegetarian Pasta",
+      "image": "https://picsum.photos/200/300",
+      "time": 18,
+      "description": "A hearty vegetarian pasta dish for pasta lovers.",
+      "vegan": true
+    },
+    {
+      "id": 7,
+      "title": "Savory Soup",
+      "image": "https://picsum.photos/200/300",
+      "time": 7,
+      "description": "A warm and savory soup to comfort your soul.",
+      "vegan": false
+    },
+    {
+      "id": 8,
+      "title": "Dessert Delight",
+      "image": "https://picsum.photos/200/300",
+      "time": 12,
+      "description": "Indulge in a delightful dessert experience.",
+      "vegan": true
+    },
+    {
+      "id": 9,
+      "title": "BBQ Extravaganza",
+      "image": "https://picsum.photos/200/300",
+      "time": 20,
+      "description": "A BBQ feast with a variety of grilled delights.",
+      "vegan": false
+    }
+  ]
+}
